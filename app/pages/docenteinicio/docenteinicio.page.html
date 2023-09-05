@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="alumnoMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+    <ion-back-button defaultHref="/" color="primary" slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding"> 
+    <ion-content >
+      <div>
+        <h1 style="display: block; text-align: center;background-color: goldenrod; border-radius: 400px; color: black; border: 20px; font-weight: bold; ">Docentes</h1>
+      </div>
+        <div style="display: flex; justify-content: center;">
+          <img style="border-radius: 10%; background-color: goldenrod;" src="/assets/logo-removebg-preview.png">
+        </div>
+          <br>
+        <ion-card-content style="text-align: center;">
+          <ion-input type="user"placeholder="UsuarioDocente@duocuc.cl" ></ion-input>
+          <ion-input type="password" placeholder="*********"></ion-input>
+          <br>
+          <a (click)="Olvide()">Olvidaste tu contraseña?</a>
+        </ion-card-content>
+        
+        <div style="display: flex; justify-content: center;">
+          <br>
+          <ion-button id="open-action-sheet" style="border-radius: 10%;" color="warning" href="/docentemenu">
+            Ingresar
+          </ion-button>
+        </div>
+    </ion-content>
+  </ion-content>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title style="text-align: center; font-size: small;">@RegistrApp Suazo-Ulloa</ion-title>
+    </ion-toolbar>
+  </ion-footer>

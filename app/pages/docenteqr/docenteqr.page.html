@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="alumnoMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+    <ion-back-button defaultHref="/" color="primary" slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding"> 
+  <ion-content>
+    <div>
+      <h1 style="display: block; text-align: center;background-color: goldenrod; border-radius: 400px; color: black; border: 20px; font-weight: bold; ">Sección XXXD</h1>
+    </div>
+    <br>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Se ha generado el siguiente codigo QR:</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content style="text-align: center;">
+        <img src="assets/QRdocente.png" >
+      </ion-card-content>
+    </ion-card>
+    <br>
+    <ion-button style="display: block;" id="present-alert" color="warning">Proyectar QR</ion-button>
+      <ion-alert
+        trigger="present-alert"
+        message="Proyectando codigo QR en el aula."
+        [buttons]="alertButtons"
+      ></ion-alert>
+    <ion-button style="display: block;" color="danger" href="/docentemenu">Cerrar Asistencia</ion-button>
+  </ion-content>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title style="text-align: center; font-size: small;">@RegistrApp Suazo-Ulloa</ion-title>
+  </ion-toolbar>
+</ion-footer>
+  
+

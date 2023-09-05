@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="alumnoMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+    <ion-back-button defaultHref="/" color="primary" slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding"> 
+  <div>
+    <h1 style="text-align: center; background-color: goldenrod; border-radius: 160px; font-size: 36pt; color: black; font-weight: bold;">Registrate aquí</h1>
+  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="display: flex; justify-content: center">Datos de Usuario</ion-card-title>
+    </ion-card-header>
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">Correo Electrónico</ion-label>
+            <ion-input type="email" placeholder="Harry@duoc..." name="correo"
+                      [(ngModel)]="persona.correo"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" placeholder="123gallitoingles" name="password"
+                      [(ngModel)]="persona.password"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Confirmar Contraseña</ion-label>
+            <ion-input type="password" placeholder="123gallitoingles" name="password"
+                      [(ngModel)]="persona.password"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-radio-group [allowEmptySelection]="true" value="type">
+              <ion-radio value="dogs">Docente</ion-radio><br />
+              <ion-radio value="cats">Alumno</ion-radio><br />
+            </ion-radio-group>
+          </ion-item>
+        </ion-list>
+        <ion-checkbox>* I agree to the terms and conditions</ion-checkbox>
+        <ion-button (click)="Enviar()" expand="block" fill="solid" color="warning" shape="round">
+          Crear Usuario
+        </ion-button>
+        
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title style="text-align: center; font-size: small;">@RegistrApp Suazo-Ulloa</ion-title>
+  </ion-toolbar>
+</ion-footer>

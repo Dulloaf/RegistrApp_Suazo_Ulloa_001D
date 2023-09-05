@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    
+    <ion-buttons slot="end">
+      <ion-button (click)="alumnoMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="primary" style="text-align: center;">Menu Docente</ion-title>
+    <ion-back-button defaultHref="/docenteinicio" color="primary" slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding"> 
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Consulta de base de datos</ion-card-title>
+      <ion-card-subtitle>Diurnos</ion-card-subtitle>
+    </ion-card-header>
+    <div style="text-align: center;">
+      <img style="height: 90px; width: max-content;" alt="Silhouette of mountains" src="/assets/beneficios-base-de-datos.webp" />
+    </div>
+    <div style="text-align: center;">
+      <ion-button fill="clear">004</ion-button>
+      <ion-button fill="clear">006</ion-button>
+      <ion-button fill="clear">008</ion-button>
+      <ion-button fill="clear">010</ion-button>
+    </div>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Modelamiento de base de datos</ion-card-title>
+      <ion-card-subtitle>Diurnos</ion-card-subtitle>
+    </ion-card-header>
+    <div style="text-align: center;">
+      <img style="height: 90px; width: max-content;" alt="Silhouette of mountains" src="/assets/descarga.png" />
+    </div>
+    <div style="text-align: center;">
+      <ion-button fill="clear">004</ion-button>
+      <ion-button fill="clear">006</ion-button>
+      <ion-button fill="clear">008</ion-button>
+      <ion-button fill="clear">010</ion-button>
+    </div>
+  </ion-card>
+
+
+    
+      <ion-button style="display: block;" href="/docenteqr" color="warning">Generar Codigo QR</ion-button>
+      <ion-button style="display: block;" color="warning">Registro Asistencia</ion-button>
+
+    
+  </ion-content>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title style="text-align: center; font-size: small;">@RegistrApp Suazo-Ulloa</ion-title>
+    </ion-toolbar>
+  </ion-footer>

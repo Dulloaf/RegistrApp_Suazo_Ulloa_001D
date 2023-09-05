@@ -1,0 +1,33 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <br>
+    <div style="display: flex; justify-content: center;">
+      <img style="border-radius: 10%; background-color: goldenrod;" src="/assets/logo-removebg-preview.png">
+    </div>
+    <br><br>
+    <div style="display: flex; justify-content: center;">
+      <img style="background-color: goldenrod; border-radius: 40px;" src="/assets/pngwing.com (1).png" width="200px" height="200px">
+    </div>
+    <br><br>
+    <div style="display: flex; justify-content: center;">
+      <ion-button (click)="presentActionSheet()" id="open-action-sheet" style="border-radius: 10%;" color="warning">Inicio de Sesión
+      </ion-button>
+    </div>
+    <div style="display: flex; justify-content: center;">
+      <ion-button style="border-radius: 10%;" color="warning" href="/registrouser">
+        Regístrate Aquí
+      </ion-button>
+    </div>
+    
+  </ion-content>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title style="text-align: center; font-size: small;">@RegistrApp Suazo-Ulloa</ion-title>
+  </ion-toolbar>
+</ion-footer>
